@@ -5,13 +5,15 @@ const InteractivityExam = ({ list }) => {
   const [word, setWord] = useState("");
   const [newWord, setNewWord] = useState(word);
 
+//my own testing stuff
+console.log(word + "This is what is first loaded");
+
   useEffect(() => {
     setWord((prevName) => prevName.toUpperCase());
   }, []);
 
   const handleNameChange = (event) => {
     setWord(event.target.value);
-    getWord();
   };
 
   const handleSubmit = (event) => {
@@ -24,7 +26,7 @@ const InteractivityExam = ({ list }) => {
 
   return (
     <div>
-      {word && <div>{word}</div>}
+      {word.length > 3 && <div>{word}</div>}
       <div className="">
         <form onSubmit={handleSubmit} className="">
           <div className="p-2 bg-green-200">

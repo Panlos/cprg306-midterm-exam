@@ -7,7 +7,7 @@ const CodeSample1 = () => {
   return (
     <div className="h-screen bg-white text-black">
       <div className="bg-gray-200 h-[100px] flex items-center justify-center">
-        <p className="text-center">
+        <p className="text-center flex items-center justify-center">
           Here is a sample portfolio page. One the left is an unstyled page and
           on the right a minimally styled page. Use this page to answer your
           tailwind css questions.{" "}

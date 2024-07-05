@@ -20,6 +20,7 @@ const CodeSample3 = () => {
           response from this call will contain a json with a single field called
           "secretCode". This is the answer to your question.{" "}
         </p>
+        
       </div>
 
       <div className="p-4">
